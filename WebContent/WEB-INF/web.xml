@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+
+	<servlet>
+		<servlet-name>myFirstServlet</servlet-name>
+		<servlet-class>com.oslanka.Login</servlet-class><!-- 执行的是这个类 -->
+	</servlet>
+	<servlet>
+		<servlet-name>myFirstServlet2</servlet-name>
+		<servlet-class>com.oslanka.DataSelect</servlet-class><!-- 执行的是这个类 -->
+	</servlet>
+
+	<servlet>
+		<servlet-name>myFirstServlet3</servlet-name>
+		<servlet-class>com.oslanka.UploadImage</servlet-class><!-- 执行的是这个类 -->
+	</servlet>
+
+	<servlet>
+		<servlet-name>myFirstServlet4</servlet-name>
+		<servlet-class>com.oslanka.OpenImages</servlet-class><!-- 执行的是这个类 -->
+	</servlet>
+
+	<servlet>
+		<servlet-name>myFirstServlet5</servlet-name>
+		<servlet-class>com.oslanka.UploadContent</servlet-class><!-- 执行的是这个类 -->
+	</servlet>
+		<servlet>
+		<servlet-name>myFirstServlet6</servlet-name>
+		<servlet-class>com.oslanka.DataSelectPic</servlet-class><!-- 执行的是这个类 -->
+	</servlet>
+	<servlet>
+		<servlet-name>myFirstServlet7</servlet-name>
+		<servlet-class>com.oslanka.ChangePassword</servlet-class><!-- 执行的是这个类 -->
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>myFirstServlet</servlet-name> <!-- 两个name 相应就好 -->
+		<url-pattern>/login</url-pattern><!-- 访问的是这个路径 -->
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>myFirstServlet2</servlet-name> <!-- 两个name 相应就好 -->
+		<url-pattern>/getSelect</url-pattern><!-- 访问的是这个路径 -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>myFirstServlet3</servlet-name> <!-- 两个name 相应就好 -->
+		<url-pattern>/upload</url-pattern><!-- 访问的是这个路径 -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>myFirstServlet4</servlet-name> <!-- 两个name 相应就好 -->
+		<url-pattern>/images</url-pattern><!-- 访问的是这个路径 -->
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>myFirstServlet5</servlet-name> <!-- 两个name 相应就好 -->
+		<url-pattern>/uploadContent</url-pattern><!-- 访问的是这个路径 -->
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>myFirstServlet6</servlet-name> <!-- 两个name 相应就好 -->
+		<url-pattern>/getSelectPic</url-pattern><!-- 访问的是这个路径 -->
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>myFirstServlet7</servlet-name> <!-- 两个name 相应就好 -->
+		<url-pattern>/change</url-pattern><!-- 访问的是这个路径 -->
+	</servlet-mapping>
+	
+	<welcome-file-list>
+		<welcome-file>./WEB-INF</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
